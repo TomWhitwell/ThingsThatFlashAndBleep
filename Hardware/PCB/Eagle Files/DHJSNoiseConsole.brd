@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -21,11 +21,11 @@
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
@@ -141,10 +141,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="0" y1="29.972" x2="54.864" y2="29.972" width="0.127" layer="21"/>
 <wire x1="54.864" y1="29.972" x2="54.864" y2="0" width="0.127" layer="21"/>
 <wire x1="54.864" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="V+" x="53.086" y="21.336" drill="2.032" shape="square"/>
-<pad name="V-" x="53.086" y="8.382" drill="2.032" shape="square"/>
-<text x="49.276" y="20.828" size="1.27" layer="21">V+</text>
-<text x="49.276" y="7.874" size="1.27" layer="21">V-</text>
+<pad name="V-" x="53.086" y="21.336" drill="2.032" shape="square"/>
+<pad name="V+" x="53.086" y="8.382" drill="2.032" shape="square"/>
+<text x="49.276" y="20.828" size="1.27" layer="21">V-</text>
+<text x="49.276" y="7.874" size="1.27" layer="21">V+</text>
 <hole x="27.178" y="3.81" drill="2.286"/>
 <hole x="13.716" y="26.162" drill="2.286"/>
 <hole x="40.64" y="26.162" drill="2.286"/>
@@ -7988,9 +7988,6 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -8096,13 +8093,13 @@ design rules under a new name.</description>
 <attribute name="MFG" value="SANCO" x="95.875" y="15.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PROD_#" value="NA" x="95.875" y="15.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="VR1" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="50k" x="66.04" y="15.5"/>
-<element name="VR2" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="50k" x="16.51" y="15.5"/>
+<element name="VR1" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="100k" x="66.04" y="15.5"/>
+<element name="VR2" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="100k" x="16.51" y="15.5"/>
 <element name="D1" library="SparkFun-LED" package="LED-RGB-THRU" value="LED-RGB-CC-THRUCLEAR" x="41.25" y="14.23" rot="R180">
 <attribute name="PROD_ID" value="DIO-08418" x="41.25" y="14.23" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="S2" library="SparkFun-Electromechanical" package="TACTILE-PTH-SIDEEZ" value="" x="80.01" y="2.032"/>
-<element name="R2" library="MusicThingModular" package="10MM_RESISTOR" value="2k" x="30.48" y="7.747"/>
+<element name="R2" library="MusicThingModular" package="10MM_RESISTOR" value="1k" x="30.48" y="7.747"/>
 <element name="U$1" library="TW_logos" package="MTM_1CM_KEEPOUT" value="" x="92.71" y="19.05" rot="MR0"/>
 <element name="U$2" library="MusicThingModular" package="MINI_SPDT_RIGHTANGLE" value="MINI_SPDT" x="80.01" y="28.448" smashed="yes" rot="R270"/>
 </elements>
@@ -8113,7 +8110,6 @@ design rules under a new name.</description>
 <contactref element="NE-556" pad="14"/>
 <contactref element="NE-556" pad="10"/>
 <contactref element="VR2" pad="3"/>
-<contactref element="D1" pad="3"/>
 <contactref element="S2" pad="1"/>
 <contactref element="U$2" pad="UP"/>
 <wire x1="68.58" y1="8.2296" x2="73.69664375" y2="3.11295625" width="0.6096" layer="1"/>
@@ -8130,10 +8126,6 @@ design rules under a new name.</description>
 <wire x1="68.1228" y1="18.617878125" x2="70.152565625" y2="23.518165625" width="0.6096" layer="1" curve="-44.999982"/>
 <wire x1="82.296" y1="28.8036" x2="82.55" y2="28.348" width="0.6096" layer="1"/>
 <wire x1="68.1228" y1="8.6868" x2="68.54" y2="8.5" width="0.6096" layer="1"/>
-<wire x1="42.9768" y1="15.5448" x2="42.0624" y2="14.6304" width="0.6096" layer="1"/>
-<wire x1="49.3776" y1="15.5448" x2="42.9768" y2="15.5448" width="0.6096" layer="1"/>
-<wire x1="42.0624" y1="14.6304" x2="41.885" y2="14.23" width="0.6096" layer="1"/>
-<wire x1="49.3776" y1="15.5448" x2="49.53" y2="15.24" width="0.6096" layer="1"/>
 <wire x1="49.8348" y1="15.0876" x2="50.977440625" y2="13.944959375" width="0.6096" layer="1"/>
 <wire x1="50.977440625" y1="13.944959375" x2="53.73775625" y2="12.8016" width="0.6096" layer="1" curve="45"/>
 <wire x1="53.73775625" y1="12.8016" x2="57.15" y2="12.8016" width="0.6096" layer="1"/>
@@ -8176,15 +8168,21 @@ design rules under a new name.</description>
 <contactref element="BAT1" pad="V+"/>
 <contactref element="S2" pad="2"/>
 <contactref element="U$2" pad="COMMON"/>
-<wire x1="74.5236" y1="9.144" x2="80.735021875" y2="2.932578125" width="0.6096" layer="1"/>
-<wire x1="80.735021875" y1="2.932578125" x2="82.296" y2="2.286" width="0.6096" layer="1" curve="45"/>
-<wire x1="82.296" y1="2.286" x2="82.51" y2="2.032" width="0.6096" layer="1"/>
-<wire x1="74.5236" y1="9.144" x2="74.5236" y2="13.571378125" width="0.6096" layer="1"/>
-<wire x1="74.5236" y1="13.571378125" x2="75.272440625" y2="15.379240625" width="0.6096" layer="1" curve="-44.99995"/>
-<wire x1="75.272440625" y1="15.379240625" x2="77.984" y2="18.0908" width="0.6096" layer="1"/>
-<wire x1="77.984" y1="18.0908" x2="80.01" y2="22.981996875" width="0.6096" layer="1" curve="45"/>
-<wire x1="80.01" y1="22.981996875" x2="80.01" y2="28.548" width="0.6096" layer="1"/>
-<wire x1="74.5236" y1="9.144" x2="73.406" y2="9.144" width="0.6096" layer="1"/>
+<wire x1="82.51" y1="2.032" x2="81.788" y2="2.032" width="0.8128" layer="1"/>
+<wire x1="81.788" y1="2.032" x2="80.75395" y2="3.06605" width="0.8128" layer="1"/>
+<wire x1="80.75395" y1="3.06605" x2="80.01" y2="4.862103125" width="0.8128" layer="1" curve="-45.00007"/>
+<wire x1="80.01" y1="4.862103125" x2="80.01" y2="5.95648125" width="0.8128" layer="1"/>
+<wire x1="80.01" y1="5.95648125" x2="78.833715625" y2="8.796284375" width="0.8128" layer="1" curve="44.999968"/>
+<wire x1="78.833715625" y1="8.796284375" x2="74.40395" y2="13.22605" width="0.8128" layer="1"/>
+<wire x1="74.40395" y1="13.22605" x2="73.66" y2="15.022103125" width="0.8128" layer="1" curve="-45.00007"/>
+<wire x1="73.66" y1="15.022103125" x2="73.66" y2="21.59" width="0.8128" layer="1"/>
+<wire x1="73.66" y1="21.59" x2="73.66" y2="21.844" width="0.8128" layer="1"/>
+<wire x1="73.66" y1="21.844" x2="73.406" y2="22.098" width="0.8128" layer="1"/>
+<wire x1="80.01" y1="28.548" x2="80.01" y2="25.3062875" width="0.8128" layer="1"/>
+<wire x1="80.01" y1="25.3062875" x2="79.178240625" y2="23.298240625" width="0.8128" layer="1" curve="-45"/>
+<wire x1="79.178240625" y1="23.298240625" x2="78.301759375" y2="22.421759375" width="0.8128" layer="1"/>
+<wire x1="78.301759375" y1="22.421759375" x2="76.2937125" y2="21.59" width="0.8128" layer="1" curve="-45"/>
+<wire x1="76.2937125" y1="21.59" x2="73.66" y2="21.59" width="0.8128" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="BAT1" pad="V-"/>
@@ -8310,6 +8308,9 @@ design rules under a new name.</description>
 <wire x1="35.6616" y1="7.7724" x2="35.56" y2="7.747" width="0.6096" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="3,16,626184cf67e08ea5"/>
+</errors>
 </board>
 </drawing>
 <compatibility>

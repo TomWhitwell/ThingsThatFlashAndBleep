@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -953,10 +953,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="0" y1="29.972" x2="54.864" y2="29.972" width="0.127" layer="21"/>
 <wire x1="54.864" y1="29.972" x2="54.864" y2="0" width="0.127" layer="21"/>
 <wire x1="54.864" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="V+" x="53.086" y="21.336" drill="2.032" shape="square"/>
-<pad name="V-" x="53.086" y="8.382" drill="2.032" shape="square"/>
-<text x="49.276" y="20.828" size="1.27" layer="21">V+</text>
-<text x="49.276" y="7.874" size="1.27" layer="21">V-</text>
+<pad name="V-" x="53.086" y="21.336" drill="2.032" shape="square"/>
+<pad name="V+" x="53.086" y="8.382" drill="2.032" shape="square"/>
+<text x="49.276" y="20.828" size="1.27" layer="21">V-</text>
+<text x="49.276" y="7.874" size="1.27" layer="21">V+</text>
 <hole x="27.178" y="3.81" drill="2.286"/>
 <hole x="13.716" y="26.162" drill="2.286"/>
 <hole x="40.64" y="26.162" drill="2.286"/>
@@ -3165,8 +3165,8 @@ COM-09264 (Diffuse)</description>
 </class>
 </classes>
 <parts>
-<part name="VR1" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT" device="_" value="50k"/>
-<part name="VR2" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT" device="_" value="50k"/>
+<part name="VR1" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT" device="_" value="100k"/>
+<part name="VR2" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT" device="_" value="100k"/>
 <part name="NE-556" library="SparkFun-AnalogIC" deviceset="556" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="+9V" device=""/>
 <part name="SP1" library="SparkFun-Electromechanical" deviceset="SPEAKER" device="" technology="PCB_MOUNT"/>
@@ -3186,9 +3186,8 @@ COM-09264 (Diffuse)</description>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-RGB-CC-THRU" device="CLEAR"/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY12" library="supply2" deviceset="+9V" device=""/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SIDE_EZ" value=""/>
-<part name="R2" library="MusicThingModular" deviceset="RESISTOR" device="10MM_RESISTOR" value="2k"/>
+<part name="R2" library="MusicThingModular" deviceset="RESISTOR" device="10MM_RESISTOR" value="1k"/>
 <part name="U$2" library="MusicThingModular" deviceset="MINI_SPDT" device=""/>
 </parts>
 <sheets>
@@ -3217,7 +3216,6 @@ COM-09264 (Diffuse)</description>
 <instance part="SUPPLY10" gate="GND" x="71.12" y="38.1"/>
 <instance part="D1" gate="G$1" x="76.2" y="15.24"/>
 <instance part="SUPPLY11" gate="GND" x="104.14" y="12.7"/>
-<instance part="SUPPLY12" gate="G$1" x="45.72" y="20.32"/>
 <instance part="S2" gate="G$1" x="-20.32" y="76.2" rot="R270"/>
 <instance part="R2" gate="G$1" x="93.98" y="15.24" rot="R180"/>
 <instance part="U$2" gate="G$1" x="-5.08" y="81.28"/>
@@ -3259,15 +3257,6 @@ COM-09264 (Diffuse)</description>
 <pinref part="VR2" gate="G$1" pin="E"/>
 <pinref part="SUPPLY9" gate="G$1" pin="+9V"/>
 <wire x1="73.66" y1="96.52" x2="73.66" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY12" gate="G$1" pin="+9V"/>
-<wire x1="45.72" y1="15.24" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="GREEN_CATHODE"/>
-<wire x1="43.18" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
-<label x="43.18" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
-<junction x="45.72" y="15.24"/>
-<wire x1="45.72" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
