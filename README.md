@@ -8,6 +8,7 @@ The course was 4 x 90 minute sessions for 7-11 year olds, covering electronic mu
 - Hardware: Eagle PCB files, lasercut outlines and a BOM for the Bleep-o-Matic  
 - Documentation: Powerpoint slides and printed materials 
 - Next steps: some online resources and books for anyone wanting to learn more 
+- Before starting, check the Issue Log for any unresolved problems
 
 ####License  
 All hardware and documentation in this project is Creative Commons licensed by Tom Whitwell: [CC-BY-NC-SA: Attribution / ShareAlike / NonCommercial](https://creativecommons.org/licenses/by-nc-sa/4.0/)  
