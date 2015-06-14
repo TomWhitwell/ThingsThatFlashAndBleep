@@ -127,6 +127,7 @@ DHJS</text>
 Dulwich Hamlet
 Junior School
 Summer 2015</text>
+<text x="54.61" y="27.94" size="1.016" layer="21" font="vector">PCB Rev 2, June 2015</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
