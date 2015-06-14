@@ -9,6 +9,10 @@ The course was 4 x 90 minute sessions for 7-11 year olds, covering electronic mu
 - Documentation: Powerpoint slides and printed materials 
 - Next steps: some online resources and books for anyone wanting to learn more 
 - Before starting, check the Issue Log for any unresolved problems
+ 
+###History 
+
+- The Rev2 PCB board designs (June 2015) in this repository fix a number of small issues on the boards used for the classes.  
 
 ####License  
 All hardware and documentation in this project is Creative Commons licensed by Tom Whitwell: [CC-BY-NC-SA: Attribution / ShareAlike / NonCommercial](https://creativecommons.org/licenses/by-nc-sa/4.0/)  
